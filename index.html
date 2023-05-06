@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Irk Bitig Falı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Zar Atma Sitesi</h1>
+      <p>Irk Bitig falınıza bakmak için zarlara tıklayın.</p>
+      <div class="center">
+        <div class="grid">
+          <div class="dice" id="dice1" onclick="rollDice(1)">
+            <img src="dice1.png" alt="1">
+          </div>
+          <div class="dice" id="dice2" onclick="rollDice(2)">
+            <img src="dice2.png" alt="2">
+          </div>
+          <div class="dice" id="dice3" onclick="rollDice(3)">
+            <img src="dice3.png" alt="3">
+          </div>
+        </div>
+      </div>
+      <p id="result">Sonuç: </p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
