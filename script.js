@@ -1,10 +1,16 @@
+let usedDice = [];
+
 function rollDice(dice) {
-    let number = Math.floor(Math.random() * 4) + 1;
-    document.getElementById("dice" + dice).innerHTML = number;
-    let diceValue = number;
-    calculateResult();
-    // alert("zar" + dice + "=" + diceValue);
+  if (usedDice.includes(dice)) {
+      return;
+  }
+  usedDice.push(dice);
+  let number = Math.floor(Math.random() * 4) + 1;
+  document.getElementById("dice" + dice).innerHTML = number;
+  let diceValue = number;
+  calculateResult();
 }
+
 
 
 function getLetter(number) {
@@ -180,17 +186,6 @@ function calculateResult() {
 
 
 
-
-       
-
-
-
-
-   
-   
-   
-   
-        // Eğer zarların değerleri tabloda olmayan bir kombinasyon ise
     } else if (atis1 != "" || atis2 != "" || atis3 != "") {
       document.getElementById("result").innerHTML += "<br>Diğer zarları da atınız.";
     }
