@@ -38,8 +38,31 @@
     font-size: 50px;
     text-align: center;
     line-height: 100px;
+    transition: transform 0.5s; /* Bu satırı ekleyin */
 }
   
 .grid {
     display: flex;
+}
+#result {
+    text-align: center;
+    font-size: 24px;
+    color: blue;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.container {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 0 auto;
+    position: absolute; /* Pozisyonu mutlak yapar */
+    top: 50%; /* Üst kenardan yüzde 50 mesafe bırakır */
+    left: 50%; /* Sol kenardan yüzde 50 mesafe bırakır */
+    transform: translate(-50%, -50%); /* Kendi boyutunun yarısı kadar kaydırır */
+    
 }
